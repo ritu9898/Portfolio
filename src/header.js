@@ -23,9 +23,6 @@ function Header() {
           <li class="nav-item">
             <Link to="/projects" class="nav-link nav-color">Projects</Link>
           </li>
-          <li class="nav-item">
-            <a class="nav-link nav-color disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
         </ul>
         <Switch>
           <Route exact path='/' component={Home}></Route>

@@ -55,6 +55,13 @@ li a.nav-color {
   border-radius: 8px;
 }
 
+.blog-images {
+  /* height: 50%; */
+  width: 100%;
+  border-radius: 8px;
+  margin: 2vh 0vh;
+}
+
 .card {
   margin: 10vh 0vh;
   background-color: black;

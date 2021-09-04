@@ -3,7 +3,7 @@ import React from 'react';
 
 const query = `
     {
-      user(username: "rutikwankhade") {
+      user(username: "ritu792") {
         publication {
           posts{
             slug
@@ -37,7 +37,7 @@ class Blog extends React.Component {
     const ApiResponse = await response.json();
     this.setState({ posts: ApiResponse.data.user.publication.posts});
 
-    console.log(ApiResponse.data.user.publication.posts); 
+    // console.log(ApiResponse.data.user.publication.posts[0].brief); 
   };
 
   render () {
@@ -47,9 +47,19 @@ class Blog extends React.Component {
         {this.state.posts.map((post, index) => (
           <div className="row">
             <div className="col-md-12">
-            <a key={index} href={`https://blog.rutikwankhade.dev/${post.slug}`} target="_blank"><h2 className="text-secondary">{post.title}</h2></a>      
-              <a key={index} href={`https://blog.rutikwankhade.dev/${post.slug}`} target="_blank"><img src={post.coverImage} class="card-img-top side-images" alt="..." /></a>    
-              <p>{post.brief}</p>
+              <a key={index} href={`https://ritukapadia.hashnode.dev/${post.slug}`} target="_blank">
+                <h2 className="text-secondary">{post.title}</h2>
+              </a>      
+              <div className="row">
+                <div className="col-md-4">
+                  <a key={index} href={`https:/ritukapadia.hashnode.dev/${post.slug}`} target="_blank">
+                    <img src={post.coverImage} class="card-img-top blog-images" alt="..." />
+                  </a>    
+                </div>
+                <div className="col-md-8">
+                  <p>{post.brief}</p>
+                </div>
+              </div>
             </div>
             <hr />
           </div>
