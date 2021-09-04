@@ -74,6 +74,17 @@ li a.nav-link:hover {
   color: darkgray;
 }
 
+a {
+  color: #282c34;
+}
+
+#blog a:hover {
+  color: aliceblue;
+}
+
+a::before {
+  text-decoration: unset;
+}
 
 /* CSS for toggle mode button */
 
