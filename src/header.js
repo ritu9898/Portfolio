@@ -7,6 +7,7 @@ import {
   Switch
 } from 'react-router-dom';
 import Home from './home';
+import Project from './project';
 
 
 function Header() {
@@ -21,13 +22,13 @@ function Header() {
             <Link to="/blog" class="nav-link nav-color">Blog</Link>
           </li>
           <li class="nav-item">
-            <Link to="/projects" class="nav-link nav-color">Projects</Link>
+            <Link to="/project" class="nav-link nav-color">Projects</Link>
           </li>
         </ul>
         <Switch>
           <Route exact path='/' component={Home}></Route>
           <Route exact path='/blog' component={Blog}></Route>
-          <Route exact path='/blog' component={Blog}></Route>
+          <Route exact path='/project' component={Project}></Route>
         </Switch>
       </div>
     </Router>
