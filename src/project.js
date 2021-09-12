@@ -50,7 +50,7 @@ class Project extends React.Component {
 
     let menuItems = [];
     for (var i = 0; i < this.state.obj.length; i++) {
-        menuItems.push(<div class="card"><div class="card-body"><h5 class="card-title">Project {i}</h5><h6 class="card-subtitle mb-2 text-muted">{this.state.obj[i].name}</h6><p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a href={this.state.obj[i]['git-link']}>GIT Link</a><a href={this.state.obj[i]['live-link']} class="card-link">Live Demo</a></div></div>)
+        menuItems.push(<div class="card"><div class="card-body"><h5 class="card-title">Project {i}</h5><h6 class="card-subtitle mb-2 text-muted">{this.state.obj[i].name}</h6><p class="card-text"></p><a href={this.state.obj[i]['git-link']}>GIT Link</a><a href={this.state.obj[i]['live-link']} class="card-link">Live Demo</a></div></div>)
     }
 
     return(
