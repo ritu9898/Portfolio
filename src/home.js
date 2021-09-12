@@ -16,9 +16,12 @@ function Home() {
           </div>
           <div class="col-md-6 card" id="intro-card">
             <h5 class="card-title">Ritu Kapadia</h5>
-            <p class="card-text">A software engineer, a dancer, and a once in a while blogger. Welcome to my website. Here you can read my blogs and also checkout what I made.</p>
+            <p class="card-text">A software engineer, a dancer, and a once in a while blogger. Welcome to my website. Here you can read my blogs and also checkout what I made.
+            Before that, some details about me...
+            I completed my masters in 2020 from DA-IICT, Gandhinagar. Currently I am working @Bacancy Technology, Ahmedabad.</p>
           </div>
         </div>
+    
       </section>
     </div>
     );
