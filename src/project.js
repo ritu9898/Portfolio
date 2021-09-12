@@ -33,6 +33,15 @@ class Project extends React.Component {
         {'name': 'Stock Calc',
           'git-link': 'https://github.com/ritu9898/stock-calc/tree/master',
           'live-link': 'https://stock-calc.ritukapadia.repl.co'},
+        {'name': 'Cash Register Management',
+          'git-link': 'https://github.com/ritu9898/cash-register/tree/master',
+          'live-link': 'https://quizzical-swirles-163c81.netlify.app/'},
+        {'name': 'Pallindrome Birthday',
+          'git-link': 'https://github.com/ritu9898/pallindrom-bday/tree/master',
+          'live-link': 'https://distracted-mcclintock-a161af.netlify.app/'},
+        {'name': 'Fun Triangles',
+          'git-link': 'https://github.com/ritu9898/fun-triangles/tree/master',
+          'live-link': 'https://fun-triangles.tiiny.site/'}
       ]
     }
   }

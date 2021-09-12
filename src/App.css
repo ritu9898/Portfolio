@@ -93,6 +93,10 @@ a::before {
   text-decoration: unset;
 }
 
+.card-body a {
+  margin: 10px;
+}
+
 /* CSS for toggle mode button */
 
 .switch {

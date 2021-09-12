@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import github from './images/github.png';
 import linkedin from './images/linkedin.png';
 import darkmode from './images/dark-mode.png';
+import twitter from './images/twitter1.png'; 
 
 function Footer() {
   
@@ -41,7 +42,10 @@ function Footer() {
           <img src={github} className="logo" alt="github" />
           </a>
           <a class="nav-link nav-color" data-bs-toggle="tooltip" data-bs-placement="right" title="LinkedIn" href="https://www.linkedin.com/in/ritu-kapadia-72a1aa145/">
-            <img src={linkedin} className="logo" alt="github" />
+            <img src={linkedin} className="logo" alt="linkedin" />
+          </a>
+          <a class="nav-link nav-color" data-bs-toggle="tooltip" data-bs-placement="right" title="Twitter" href="https://twitter.com/KapadiaRitu">
+            <img src={twitter} className="logo" alt="twitter" />
           </a>
         </div>
         <div className="col-md-2">
