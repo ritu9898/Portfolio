@@ -27,6 +27,16 @@ li a.nav-color {
   font-family: 'Rubik', sans-serif;
 }
 
+.container, .container-fluid {
+  /* width: 100%; */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text-grey {
+  color: #6c757d;
+}
+
 .bg-img {
   height: auto;
   width: 100%;
@@ -48,8 +58,17 @@ li a.nav-color {
   justify-content: center;
 }
 
+footer {
+  /* position: absolute; */
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+}
+
 .side-images {
-  height: auto;
+  /* height: auto; */
+  height: 480px;
   width: 100%;
   margin: 10vh 0vh;
   border-radius: 8px;
@@ -62,15 +81,47 @@ li a.nav-color {
   margin: 2vh 0vh;
 }
 
+.col-md-12 a img .blog-images {
+  width: 100%;
+  border-radius: 8px;
+  margin: 2vh 0vh;
+}
+
 .card {
   margin: 10vh 0vh;
   background-color: black;
   padding: 5vh;
   text-align: initial;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 8px;
 }
 
 .card-title {
+  margin-bottom: .5rem;
   text-align: center;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+}
+
+.home-img {
+  margin: 0 10px;
+}
+
+.yello-card {
+  margin: 50px 30px;
+}
+
+.info-card {
+  margin: 50px;
 }
 
 .App-link {
@@ -97,6 +148,38 @@ a::before {
   margin: 10px;
 }
 
+.read-more {
+  text-decoration: underline;
+  color: #2196F3;
+}
+
+.read-more:hover {
+  color: whitesmoke;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Header */
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.justify-content-end {
+  justify-content: flex-end!important;
+}
+
+.nav-link {
+  display: block;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
 /* CSS for toggle mode button */
 
 .switch {
@@ -104,6 +187,7 @@ a::before {
   display: inline-block;
   width: 60px;
   height: 34px;
+  top: 10px;
 }
 
 .switch input { 
@@ -172,6 +256,94 @@ input:checked + .slider:before {
 
 .light-blog {
   color: darkgray !important;
+}
+
+/* Project CSS */
+
+.card-body button {
+  margin: 10px 10px 10px 0;
+}
+
+.text-muted {
+  color: #6c757d!important;
+}
+
+.mb-2 {
+  margin-bottom: .5rem!important;
+}
+
+.card-subtitle {
+  margin-top: -.25rem;
+  margin-bottom: 0;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+/* Blog CSS */
+
+.row:before, .row:after {
+  display: table;
+  content: " ";
+}
+
+.row:after {
+  clear: both;
+}
+
+.row {
+  display: flex;
+}
+
+.blog .row{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.col-md-12 {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.col-md-8 {
+  flex: 0 0 auto;
+  width: 66.66666667%;
+}
+
+.col-md-6 {
+  /* flex: 0 0 auto; */
+  width: 50%;
+}
+
+.col-md-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+.col-md-2 {
+  flex: 0 0 auto;
+  width: 16.66666667%;
+}
+
+.text-secondary {
+  color: rgba(var(--bs-secondary-rgb),var(--bs-text-opacity))!important;
+}
+
+/* Contact form */
+
+.form-container {
+  margin: 10px;
+  padding: 20px;
+  display: inline-block;
+}
+
+.submit-contact-form {
+  margin-top: 30px;
 }
 
 @keyframes App-logo-spin {

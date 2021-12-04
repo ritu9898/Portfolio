@@ -1,17 +1,14 @@
-import './App.css';
-import React from 'react';
-import {
-  BrowserRouter as Router,
-  Link
-} from "react-router-dom";
-import ProjectDetails from './projectDetails';
+import { React, useEffect } from "react";
+import { useParams } from "react-router";
 
-class Project extends React.Component { 
+// class ProjectDetails extends React.Component {
+//   render() {
+  function ProjectDetails() {
 
-  constructor() {
-    super();
+    let count = 0;
+    const { id } = useParams(); // here id is the :id that we define in Project route
 
-    this.state = {
+    const data = {
       obj: [
         { 'id': 1,
           'name': 'CLI App',
@@ -59,20 +56,33 @@ class Project extends React.Component {
           'live-link': 'https://fun-triangles.tiiny.site/'}
       ]
     }
-  }
 
-  render() {
-    let menuItems = [];
-    for (var i = 0; i < this.state.obj.length; i++) {
-        menuItems.push(<div className="card"><div className="card-body"><h5 className="card-title">Project {i+1}</h5><h6 className="card-subtitle mb-2 text-muted">{this.state.obj[i].name}</h6><p className=""></p><button className="btn btn-primary"><a href={this.state.obj[i]['git-link']}>GIT Link</a></button><button className="btn btn-primary"><Link to={`/project/${i+1}`}><a href={this.state.obj[i]['live-link']} className="" target="_blank">Live Demo</a></Link></button></div></div>)
-    }
+    let url = data.obj[id-1]["live-link"];
+
+
+    useEffect(() => {
+      // fetch(url)
+      // .then(response => 
+      //   console.log(response);
+      //   response.json())
+      // .then(function(data){
+      //   })
+      // .catch(function(error){ 
+      //   console.error();
+      // });
+
+      // window.location.href = url;
+      // window.history.pushState(null, '', 'http://localhost:3000/project/'+id);    
+    });
 
     return(
-        <div className="projects">
-          {menuItems}
-        </div>
+      <div>
+        <h2>Hello - {id}</h2>
+        <p>{data.obj[id-1]["live-link"]}</p>
+        
+      </div>
     );
   }
-}
+// }
 
-export default Project;
+export default ProjectDetails;

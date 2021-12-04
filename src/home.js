@@ -11,14 +11,16 @@ function Home() {
       </div>
       <section className="container">
         <div className="row">
-          <div class="col-md-6">
-            <img src={left} class="card-img-top side-images" alt="..." />
+          <div className="col-md-6">
+            <img src={left} className="card-img-top side-images yello-card" alt="..." />
           </div>
-          <div class="col-md-6 card" id="intro-card">
-            <h5 class="card-title">Ritu Kapadia</h5>
-            <p class="card-text">A software engineer, a dancer, and a once in a while blogger. Welcome to my website. Here you can read my blogs and also checkout what I made.
+          <div className="col-md-6 card info-card" id="intro-card">
+          <section className="">
+            <h5 className="card-title">Ritu Kapadia</h5>
+            <p className="card-text">A software engineer, a dancer, and a once in a while blogger. Welcome to my website. Here you can read my blogs and also checkout what I made.
             Before that, some details about me...
             I completed my masters in 2020 from DA-IICT, Gandhinagar. Currently I am working @Bacancy Technology, Ahmedabad.</p>
+          </section>
           </div>
         </div>
     
